@@ -23,29 +23,25 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 80%;
         }
-        .entry {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
+        .table {
+            display: table;
+            width: 100%;
         }
-        .text {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            font-size: 16px;
+        .row {
+            display: table-row;
         }
-        .text span {
-            margin-right: 15px;
+        .cell {
+            display: table-cell;
+            padding: 10px;
+            vertical-align: middle;
+            border-bottom: 1px solid #ddd;
+        }
+        .header {
+            font-weight: bold;
+            background-color: #f2f2f2;
         }
         .audio {
             margin-left: 20px;
-        }
-        .title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: left;
         }
     </style>
 </head>
@@ -53,18 +49,23 @@
     <h1>モンゴリア語 to 日本語</h1>
 
     <div class="container">
-        <div class="title">モンゴリア語　発音　日本語　音声</div>
-        <div class="entry">
-            <div class="text">
-                <span>Амжилт хүсье</span>
-                <span>[am-jilt khü-sye]</span>
-                <span>頑張って</span>
+        <div class="table">
+            <div class="row header">
+                <div class="cell">モンゴリア語</div>
+                <div class="cell">発音</div>
+                <div class="cell">日本語</div>
+                <div class="cell">音声</div>
             </div>
-            <div class="audio">
-                <audio controls>
-                    <source src="https://dl.dropboxusercontent.com/s/1rpw43l04a1xoonpm4p8p/am-jilt-kh-sye.mp3?rlkey=69w48sqn3wvmhcvkeyfme4wsl&dl=0" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="row">
+                <div class="cell">Амжилт хүсье</div>
+                <div class="cell">[am-jilt khü-sye]</div>
+                <div class="cell">頑張って</div>
+                <div class="cell audio">
+                    <audio controls>
+                        <source src="https://dl.dropboxusercontent.com/s/1rpw43l04a1xoonpm4p8p/am-jilt-kh-sye.mp3?rlkey=69w48sqn3wvmhcvkeyfme4wsl&dl=0" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
         </div>
     </div>
